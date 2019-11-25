@@ -18,6 +18,7 @@ use crate::style_ext::{
 };
 use crate::{ContainingBlock, DefiniteContainingBlock, IndependentFormattingContext};
 use rayon::iter::{IntoParallelRefIterator, ParallelExtend, ParallelIterator};
+use script_layout_interface::wrapper_traits::LayoutNode;
 use servo_arc::Arc;
 use style::context::SharedStyleContext;
 use style::properties::ComputedValues;
@@ -29,10 +30,13 @@ pub struct BoxTreeRoot(BlockFormattingContext);
 pub struct FragmentTreeRoot(Vec<Fragment>);
 
 impl BoxTreeRoot {
-    pub fn construct<'dom>(
+    pub fn construct<'dom, Node>(
         context: &SharedStyleContext<'_>,
-        root_element: impl NodeExt<'dom>,
-    ) -> Self {
+        root_element: Node,
+    ) -> Self
+    where
+        Node: 'dom + Copy + LayoutNode + Send + Sync,
+    {
         let (contains_floats, boxes) = construct_for_root_element(&context, root_element);
         Self(BlockFormattingContext {
             contains_floats: contains_floats == ContainsFloats::Yes,
