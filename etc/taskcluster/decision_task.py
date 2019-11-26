@@ -58,6 +58,7 @@ def tasks(task_for):
             "try": all_tests,
             "try-taskcluster": [
                 # Add functions here as needed, in your push to that branch
+                linux_wpt,
             ],
             "master": [
                 upload_docs,
