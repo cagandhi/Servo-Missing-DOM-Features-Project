@@ -1,9 +1,6 @@
-# The Servo Parallel Browser Engine Project
+# Servo Parallel Browser Engine Project
 
-Servo is a prototype web browser engine written in the [Rust](https://github.com/rust-lang/rust) language. It is currently developed on
-64-bit macOS, 64-bit Linux, 64-bit Windows, and Android. 
-
-I, along with 2 other teammates, made open-source contributions for missing DOM features in the Servo engine. This was my project in "CSC 517: Object Oriented Design and Development" course at NC State University.
+Servo is a prototype web browser engine written in the [Rust](https://github.com/rust-lang/rust) language. Implementation of missing DOM features in the browser engine. This was my project in "CSC 517: Object Oriented Design and Development" course at NC State University.
 
 Visit the [Servo GitHub page](https://github.com/servo/servo) for details on getting started, installation and how to contribute.
 
