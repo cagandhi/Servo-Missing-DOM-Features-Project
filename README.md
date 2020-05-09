@@ -11,7 +11,7 @@ Visit the [Servo GitHub page](https://github.com/servo/servo) for details on get
 
 The project abstract and the steps can be found at this [Project Page](https://github.com/servo/servo/wiki/Missing-DOM-features-project).
 
-For more details on the actual implementation and testing of the code in the project, kindly take a look at this [Wiki page](https://expertiza.csc.ncsu.edu/index.php/CSC/ECE_517_Fall_2019_-_M1952._Missing_DOM_features_project#Problem_Statement) that we have developed which highlights our contributions to the project.
+For more details on the actual implementation and testing of the code in the project, kindly take a look at this [Wiki page](https://expertiza.csc.ncsu.edu/index.php/CSC/ECE_517_Fall_2019_-_M1952._Missing_DOM_features_project#Problem_Statement) that we have developed which explains our contributions to the project.
 
 ## Relevant Branches 
 * srcdoc iframes issue - [iframe-srcdoc](https://github.com/cagandhi/servo/tree/iframe-srcdoc)
