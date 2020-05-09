@@ -1,8 +1,8 @@
 # Servo Parallel Browser Engine Project
 
-Servo is a prototype web browser engine written in the [Rust](https://github.com/rust-lang/rust) language. Implementation of missing DOM features in the browser engine. This was my project in "CSC 517: Object Oriented Design and Development" course at NC State University.
+Implementation of missing DOM features in the browser engine. This was my project in "CSC 517: Object Oriented Design and Development" course at NC State University.
 
-Visit the [Servo GitHub page](https://github.com/servo/servo) for details on getting started, installation and how to contribute.
+Servo is a prototype web browser engine written in the [Rust](https://github.com/rust-lang/rust) language. Visit the [Servo GitHub page](https://github.com/servo/servo) for details on getting started, installation and how to contribute.
 
 ## Missing DOM Features Project
 * srcdoc iframe issue - Incorporating the parsing of srcdoc attribute in iframe HTML tag.
